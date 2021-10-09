@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-long double goertzel_FFT(double* data, double k, int N) {
+double goertzel_FFT(double* data, double k, int N) {
 	
 	double omega = 2.0 * M_PI * k / (double) N;
 	double cr = cos(omega * M_PI / 180.0);
